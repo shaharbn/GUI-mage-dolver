@@ -1,14 +1,9 @@
 from window import *
-from point import *
-from line import *
-
+from maze import *
 def main():
     win = Window(800, 600)
 
-    point1 = Point(0, 0)
-    point2 = Point(800,600)
-    line1 = Line(point1, point2)
-    win.draw_line(line1, "black")
+    maze = Maze(5,5,5,5,30,30,win)
 
     win.wait_for_close()
 
